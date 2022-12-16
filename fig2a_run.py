@@ -147,7 +147,7 @@ np = int(pc.nhost());
 n = len(param_set)
 
 for i in range(myid,n,np):
-    print 'myid: ' + str(myid)+':'+str(i); pctime = str(time.time())[5:-3]
+    print('myid: ' + str(myid)+':'+str(i)); pctime = str(time.time())[5:-3]
 
     for sec in h.allsec():
         sec.veq_kcl = param_set[i][0]

@@ -39,7 +39,7 @@ ax6 = fig.add_subplot(326)
 
 def load_and_plottraces(dataset, ax1, ax2):
     for n, fname in enumerate(dataset):
-        f = open(fname)
+        f = open(fname, 'rb')
         gdat = pickle.load(f)
         odat = pickle.load(f)
 
